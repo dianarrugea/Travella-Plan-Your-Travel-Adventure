@@ -50,4 +50,6 @@
 
 * npm run test
 
-
+## Author
+### Diana Rugea
+### Front End Development Nanodegree Program
