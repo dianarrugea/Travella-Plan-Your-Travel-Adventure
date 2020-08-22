@@ -1,0 +1,132 @@
+body{
+    background: whitesmoke;
+    font-family:'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', "Helvetica", "Arial", 'sans-serif';
+}
+
+.app-body{
+	width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+	background: grey;
+	justify-content: center;
+	text-align: center;
+	box-shadow: 4px 4px 4px #444;
+	
+}
+
+h1{
+	padding-top: 10px;
+}
+
+#zip{
+	width: 300px;
+	height: 30px;
+	margin: 5px;
+	box-shadow: 4px 4px 4px 2px #666;
+}
+
+#feelings{
+	width: 300px;
+	height: 30px;
+	margin: 5px;
+	box-shadow: 4px 4px 4px 2px #666;
+}
+
+.myInput{
+	width: 300px;
+	height: 30px;
+}
+
+.holder{
+	width: 300px;
+	display: block;
+ 	margin-left: auto;
+ 	margin-right: auto;
+}
+
+.entry{
+	display: block;
+ 	margin-left: auto;
+ 	margin-right: auto;
+    background: whitesmoke;
+	width: 500px;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", "Helvetica", "Arial", "sans-serif";
+	box-shadow: 4px 4px 4px 2px #666;
+}
+
+.recent-entry-title{
+	height: 50px;
+	width: 500px;
+	font-size: 20px;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", "Helvetica", "Arial", "sans-serif";
+		
+
+}
+button{
+    width: 250px;
+    height: 50px;
+    background: #3D3939;
+    color: whitesmoke;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', "Helvetica", "Arial", 'sans-serif';
+    box-shadow: 2px 4px 5px #444;
+	margin: 10px;
+	transition-duration: 0.5s;
+	border: none;
+}
+
+button:hover {
+  background-color: black;
+  color: whitesmoke;
+}
+
+
+/*  Basic Styling To Override Default For Basic HTML Elements */
+label{
+    font-size: 25px;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", "Helvetica", "Arial", "sans-serif";
+}
+
+input{
+    height: 60px;
+    width: 320px;
+    background:whitesmoke;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', "Helvetica", "Arial", 'sans-serif';
+    border: none;
+}
+
+textarea{
+    background: whitesmoke;
+    color: black;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', "Helvetica", "Arial", 'sans-serif';
+}
+
+
+
+/*Reset style for HTML element on active to have no border*/
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+/* Style for Placeholder Text*/
+::placeholder {
+    color: #f0d43a;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', "Helvetica", "Arial", 'sans-serif';
+
+}
+:-ms-input-placeholder {
+    color: #f0d43a; 
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', "Helvetica", "Arial", 'sans-serif';
+
+}
+  
+
+::-ms-input-placeholder {
+    color: #f0d43a; 
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', "Helvetica", "Arial", 'sans-serif';
+}

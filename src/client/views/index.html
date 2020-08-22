@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Travel App</title>
+<link href="https://fonts.googleapis.com/css?family=Oswald:400,600,700|Ranga:400,700&display=swap" rel="stylesheet">
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="header">
+		<div class="about py-3 text-center">
+			<h1 class="title">Travella ~ <em>Plan your travel adventure</em></h1>
+		</div>
+	</div>
+	<!--App form -->
+	
+	<div class="app-body">
+		<div class="row m-0">
+			<div class="form">
+				<div class="form-group">
+					<label for="destination">City</label>
+					<input class="form-control" type="text" id="destination-input" placeholder="City"> 
+				</div>
+				<div class="form-group">
+					<label for="country-input">Country</label>
+					<input class="form-control" type="text" id="country-input" placeholder="Country"> 
+				</div>
+				<div class="form-group">
+					<label for="date">Date</label>
+					<input class="form-control" type="date" id="travel-date-input" placeholder=""> 
+				</div>
+				<div class="btn btn-outline-dark px-5 mt-3" id="generate">Search</div>
+			</div>
+		</div>
+	</div>
+
+
+<!-- The MODAL -->
+<div id="weatherModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+	<div class="row">
+		<div class="col-md-8">
+			<img class="modalImage img-fluid" id="modal_image"></img>
+		</div>
+		<div class="col-md-4 col-sm-12 modal-text">
+			
+			<!-- Section for CITY, COUNTRY and FLAG  -->
+			<h1 class="cityName"><span id="modal_city"></span>,</h1>
+			<div>
+				<img class="countryFlag" id="country_flag"></img> 
+				<h4 class="country"> <span id="modal_country"></span><h4>
+			</div>	
+			
+			<!-- DATE -->
+			<p>Date: <span id="modal_date"></span></p>
+			
+			<!-- Average TEMP and weather ICON -->
+			<div class="row my-4" id="tempAndIcon">	
+				<div class="col-sm-3 col-md-5">
+					<img class="weatherIcon" id="modal_weather_icon"></img>
+				</div>
+				<div class="col-sm-4 col-md-7">
+					<p class="modalTemperature"><span id="modal_temperature"></span> °C</p>
+					<p class="modalWeatherDescription" id="modal_weather_description"></p>	
+				</div>
+			</div>	
+			
+			<!-- Min and Max for the day -->
+			<div class="row my-4" id="minAndMax">
+				<!-- Min -->
+				<div class="col-xs-4 col-sm-6">
+					<div class="row">
+						<div class="col-xs-6">
+							<img class="lowHighTempIcon" src="https://raw.githubusercontent.com/dianarrugea/imagesforcapstoneproject/master/lowtemp.png">
+						</div>
+						<div class="lowHighTemp col-xs-7">
+							<p class="zeroMargin"><span id="modal_min_temp"></span> °C</p>
+							<p class="lowHighDescription">Min</p>
+						</div>
+					</div>	
+				</div>
+				<!-- Max -->
+				<div class="col-xs-4 col-sm-6">
+					<div class="row">
+						<div class="col-xs-4">
+							<img class="lowHighTempIcon" src="https://raw.githubusercontent.com/dianarrugea/imagesforcapstoneproject/master/hightemp.png">
+						</div>
+						<div class="lowHighTemp col-xs-7">
+							<p class="zeroMargin"><span id="modal_max_temp"></span> °C</p>
+							<p class="lowHighDescription">Max</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<!-- No Weather forecast -->
+			<div class="row" id="noWeatherForecast">
+				<div class="bg-danger text-white">
+					<p>There is no weather forecast for this date</p>
+				</div>
+			</div>
+			
+			<!-- Close button -->
+			<div class="row text-center">
+				<div class="btn btn-outline-dark" id="closeButton">Close</div>
+			</div>		
+			</div>
+		</div>
+	</div>	
+  </div>
+</div>   
+
+	<!--Footer-->
+	<div class="footer">
+		<div class="social-media">
+			<a href="https://www.facebok.com"> 
+				<img src="https://raw.githubusercontent.com/dianarrugea/imagesforcapstoneproject/master/Facebook.png" alt="facebook" class="sm-logo">  
+			</a> 
+			<a href="https://www.twitter.com"> 
+				<img src="https://raw.githubusercontent.com/dianarrugea/imagesforcapstoneproject/master/Twitter.png" alt="twitter" class="sm-logo">  
+			</a> 
+			<a href="https://www.linkedin.com"> 
+				<img src="https://raw.githubusercontent.com/dianarrugea/imagesforcapstoneproject/master/LinkedIn.png" alt="linkedin" class="sm-logo">  
+			</a> 
+		</div>
+		<div class="footer-logo-area">
+			<img src="https://raw.githubusercontent.com/dianarrugea/imagesforcapstoneproject/master/udacity.jpeg" alt="udacity" class="sm-logo">  
+			<h4 class="my-auto">FEND ~ Udacity</h4>
+		</div>
+	</div>
+	<div class="copyright">
+			Copyright &copy; Diana Rugea
+	</div>
+	<script src="app.js"></script>
+	
+	<!-- Service Workers -->
+	<script>
+		if ('serviceWorker' in navigator) {
+			window.addEventListener('load', () => {
+				navigator.serviceWorker.register('/service-worker.js');
+			});
+		}
+	</script>
+</body>
+</html>
