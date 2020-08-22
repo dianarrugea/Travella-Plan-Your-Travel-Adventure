@@ -28,15 +28,15 @@
 * WEATHERBIT_API_KEY= YOUR API KEY
 * PIXABAY_API_KEY= YOUR API KEY
 
-## Run the project in development mode:
-### Add the below comand in your terminal:
-
-* npm run build-dev
-
 ## Run the project in production mode:
 ### Add the below comand in your terminal:
 
 * npm run build-prod 
+
+## Run the project in development mode:
+### Add the below comand in your terminal:
+
+* npm run build-dev
 
 ## Start the sever:
 ### Add the below comand in your terminal:
