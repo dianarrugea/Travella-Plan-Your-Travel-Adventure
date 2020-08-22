@@ -77,6 +77,8 @@ function getTripDate(date){
     const daysToDeparture = Math.ceil(daysInMillis / (1000 * 3600 * 24)); 
 
     trip.daysToTrip = daysToDeparture;
+
+    return daysToDeparture;
 }
 
 // Async function to pull wheather details from Wheatherbit API.
