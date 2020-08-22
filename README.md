@@ -12,7 +12,7 @@
 * Express, Node.JS built in Webpack
 * Jest
 
-## Installing Dependencies
+## Basic Installation
 ### For this project you will need to install Node.JS and NPM (node package manager) from https://nodejs.org/en/download/.
 ### Add the below comand in your terminal after you clone the project:
 
