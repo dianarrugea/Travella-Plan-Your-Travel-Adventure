@@ -1,5 +1,7 @@
 # Travella ~ Plan your travel adventure
-### This project is a travel app that, which obtains a desired trip location & departure date from the user, and displays weather for a maximum of 16 day ahead and an image of the location using information obtained from external APIs. If there is no picture for the desired location, a representative country image will be displayed. The app also displays the flag of the country next to the date as well as icons and representative images for the weather forecast.
+### This project is a travel app that, which obtains a desired trip location & departure date from the user, and displays weather for a maximum of 16 days ahead with an image of the location using information obtained from external APIs. 
+
+### If there is no picture for the desired location, a representative country image will be displayed. The app also displays the flag of the country next to the date as well as icons and representative images for the weather forecast.
 
 ## Technologies used:
 * HTML
