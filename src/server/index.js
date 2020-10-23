@@ -25,16 +25,22 @@ app.use(cors());
 app.use (express.static(`website`));
 
 //Set up the server
-const port = 8000;
+//const port = 8000;
 
 // Spin up the server
-const server = app.listen(port, listening);
+//const server = app.listen(port, listening);
 
 //Callback to debug
-function listening(){
-    console.log(`server running`);
-    console.log(`running on localhost: ${port}`);
-}
+//function listening(){
+ //   console.log(`server running`);
+ //   console.log(`running on localhost: ${port}`);
+//}
+
+const PORT = process.env.PORT || 8000;
+
+app.listen(PORT, () => {
+  console.log(`Server listening on port ${PORT}`)
+})
 
 const dotenv = require('dotenv');
 
