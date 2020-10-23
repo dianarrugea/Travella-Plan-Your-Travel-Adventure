@@ -31,7 +31,7 @@ const port = process.env.PORT || 8000;
 
 // Spin up the server
 // const server = app.listen(port, listening);
-const server = app.listen(process.env.PORT || 8000);
+const server = app.listen(port, "0.0.0.0");
 
 // Callback to debug
 function listening(){
