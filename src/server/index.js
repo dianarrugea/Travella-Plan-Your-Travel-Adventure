@@ -30,13 +30,17 @@ const port = 8000;
 
 
 // Spin up the server
-const server = app.listen(process.env.PORT, 8000);
+//const server = app.listen(port, listening);
+
+app.listen(process.env.PORT || port, () => {
+    console.log(`Travel app running on port ${port}!`);
+});
 
 // Callback to debug
-function listening(){
-    console.log(`server running`);
-    console.log(`running on localhost: ${port}`);
-}
+// function listening(){
+//     console.log(`server running`);
+//     console.log(`running on localhost: ${port}`);
+// }
 
 const dotenv = require('dotenv');
 
