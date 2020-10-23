@@ -24,7 +24,6 @@ app.use(cors());
 // Initialize the main project folder
 app.use (express.static(`website`));
 
-app.get("/");
 
 //Set up the server
 //const port = 8000;
@@ -38,11 +37,14 @@ app.get("/");
  //   console.log(`running on localhost: ${port}`);
 //}
 
+// HEROKU CHANGES START
 const PORT = process.env.PORT || 8000;
 
 app.listen(PORT, () => {
   console.log(`Server listening on port ${PORT}`)
 })
+// HEROKU CHANGES END
+
 
 const dotenv = require('dotenv');
 
