@@ -24,6 +24,8 @@ app.use(cors());
 // Initialize the main project folder
 app.use (express.static(`website`));
 
+app.get("/");
+
 //Set up the server
 //const port = 8000;
 
@@ -171,3 +173,5 @@ app.post('/locationInfo', async (req, res) => {
     console.log("Error sending the response", error)  
   }
 })   
+
+
