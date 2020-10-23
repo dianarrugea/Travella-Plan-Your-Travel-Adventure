@@ -25,7 +25,8 @@ app.use(cors());
 app.use (express.static(`website`));
 
 //Set up the server
-const port = 8000;
+// const port = 8000;
+const port = process.env.PORT || 8000;
 
 // Spin up the server
 const server = app.listen(port, listening);
