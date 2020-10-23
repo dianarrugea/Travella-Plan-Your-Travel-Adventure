@@ -26,10 +26,11 @@ app.use (express.static(`website`));
 
 //Set up the server
 const port = 8000;
+const port = process.env.PORT || 8000;
 
 
 // Spin up the server
-const server = app.listen(port, listening);
+const server = app.listen(process.env.PORT || 8000);
 
 // Callback to debug
 function listening(){
