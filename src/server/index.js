@@ -155,7 +155,7 @@ const getCountryDetails = async (country) => {
 
 /** @api {get} / returns main page */
 app.get('/', (req, res) => {
-    res.sendFile('index.html');
+    res.sendFile('dist.html');
 })
 
 app.post('/locationInfo', async (req, res) => {
