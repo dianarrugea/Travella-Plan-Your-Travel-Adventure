@@ -153,6 +153,11 @@ const getCountryDetails = async (country) => {
   }
 }
 
+/** @api {get} / returns main page */
+app.get('/', (req, res) => {
+    res.sendFile('index.html');
+})
+
 app.post('/locationInfo', async (req, res) => {
     // Reset current trip object
     trip = {};
