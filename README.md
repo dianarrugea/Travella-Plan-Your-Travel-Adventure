@@ -51,10 +51,13 @@
 * npm run test
 
 ## Preview of the app
-### Home Page
+* Home Page
 
 ![travella1](https://user-images.githubusercontent.com/64359516/97459486-bd024080-1933-11eb-93a9-6fe726afe3de.PNG)
 
+* Once the destination and the date have been chosen, the details will pop-up as below:
+
+![travella2](https://user-images.githubusercontent.com/64359516/97460165-6fd29e80-1934-11eb-9cb6-574319118cfa.PNG)
 
 ## Author
 ### Diana Rugea
