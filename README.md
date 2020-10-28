@@ -51,6 +51,8 @@
 * npm run test
 
 ## Preview of the app
+### Home Page
+
 ![travella1](https://user-images.githubusercontent.com/64359516/97459486-bd024080-1933-11eb-93a9-6fe726afe3de.PNG)
 
 
