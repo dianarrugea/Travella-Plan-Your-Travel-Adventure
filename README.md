@@ -50,6 +50,12 @@
 
 * npm run test
 
+## Preview of the app
+
+![GitHub Logo](/images/logo.png)
+Format: ![Alt Text](url)
+
+
 ## Author
 ### Diana Rugea
 
