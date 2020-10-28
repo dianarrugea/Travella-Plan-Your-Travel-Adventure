@@ -52,8 +52,7 @@
 
 ## Preview of the app
 
-![GitHub Logo](/images/logo.png)
-Format: ![Alt Text](url)
+![Home Page](../master/myFolder/travella1.png)
 
 
 ## Author
